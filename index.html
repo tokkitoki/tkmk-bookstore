@@ -1,0 +1,76 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#171717"><title>TKMK | TRAFFIC EDITION</title><style>
+:root{--bg:#171717;--paper:#f0ede5;--muted:#aaa69d;--line:#3c3b37}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:Arial,'Noto Sans JP',sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}header{max-width:1120px;margin:auto;padding:25px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font-size:34px;font-weight:950;letter-spacing:-2px}.stripes{display:flex;gap:4px;margin-top:4px}.stripes i{display:block;width:33px;height:5px;background:#2bc82a}.stripes i:nth-child(2){background:#edc92a}.stripes i:nth-child(3){background:#e33430}.bag{border:1px solid #666;background:none;color:white;padding:12px 18px;border-radius:50px}.wrap{max-width:1120px;margin:auto;padding:48px 24px 100px}.eyebrow{font-size:12px;letter-spacing:.22em;color:#c9c3b6}.hero h1{font-size:clamp(42px,8vw,98px);letter-spacing:-.07em;line-height:1.02;margin:18px 0 16px}.hero p{color:#c5c0b5;line-height:1.8;margin:0 0 48px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.item{min-width:0}.cover{background:#292929;padding:10px;border:1px solid #333}.cover img{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover}.type{color:#aaa69d;font-size:11px;letter-spacing:.13em;margin-top:18px}.name{font-size:clamp(16px,2vw,21px);font-weight:800;line-height:1.5;min-height:3em;margin:7px 0}.price{font-size:23px;font-weight:800;margin:8px 0 15px}.add,.primary{background:#f1eee7;color:#151515;border:0;padding:14px 18px;font-weight:800;width:100%;transition:transform .15s}.add:hover,.primary:hover{transform:translateY(-2px)}.secondary{background:transparent;color:var(--paper);border:1px solid #777;padding:13px 17px}.view{display:none}.view.active{display:block}.back{margin-bottom:24px}.panel{max-width:730px}.panel h2{font-size:clamp(36px,6vw,68px);margin:8px 0 24px;letter-spacing:-.05em}.cartline{display:flex;align-items:center;gap:16px;padding:17px 0;border-bottom:1px solid var(--line)}.thumb{width:75px;aspect-ratio:4/5;object-fit:cover}.lineinfo{flex:1}.lineinfo strong{display:block;line-height:1.5}.lineinfo small{color:var(--muted)}.qty{display:flex;align-items:center;gap:13px}.qty button{background:transparent;border:1px solid #777;color:white;width:32px;height:32px}.total{display:flex;justify-content:space-between;align-items:center;font-size:22px;margin:25px 0}.total strong{font-size:32px}.actions{display:grid;gap:10px}.field{display:grid;gap:8px;margin:22px 0}.field label{font-weight:700}.field input,.field textarea{width:100%;background:#292929;border:1px solid #777;border-radius:0;padding:14px;color:white}.field small,.notice{color:var(--muted);line-height:1.7;font-size:13px}.orderbox{border:1px solid #666;padding:20px;margin:24px 0}.orderbox p{display:flex;justify-content:space-between;gap:12px}.foot{border-top:1px solid var(--line);padding:22px 24px;text-align:center;color:#a49f95;font-size:12px}.empty{color:#aaa;padding:35px 0}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#eee;color:#111;padding:12px 20px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:5}.toast.show{opacity:1}@media(max-width:680px){header{padding:18px}.wrap{padding:35px 18px 70px}.grid{grid-template-columns:1fr 1fr;gap:14px}.grid .item:last-child{grid-column:1 / -1;max-width:calc(50% - 7px)}.cover{padding:5px}.name{font-size:15px}.price{font-size:20px}.add{font-size:12px;padding:12px 5px}.hero p{margin-bottom:28px}.cartline{gap:10px}.thumb{width:55px}.qty{gap:7px}.qty button{width:28px;height:28px}.lineinfo strong{font-size:13px}}
+
+/* TKMK / TRAFFIC EDITION */
+:root{--bg:#151718;--paper:#f1f0e9;--muted:#aeb2af;--line:#444849}
+body{background:#151718;background-image:linear-gradient(90deg,transparent calc(50% - 1px),rgba(255,255,255,.018) 50%,transparent calc(50% + 1px));}
+header{border-bottom:1px solid #454a4b;position:relative}
+.logo{font-size:38px;letter-spacing:-.065em}
+.stripes{gap:6px;margin-top:9px}.stripes i{width:30px;height:6px;border-radius:0}
+.bag{border:1px solid #9fa6a3;border-radius:3px;letter-spacing:.12em;font-size:12px;font-weight:800}
+.wrap{padding-top:35px}
+.traffic-top{display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid #474b4c;padding:0 0 17px;margin-bottom:32px;font-size:10px;letter-spacing:.17em;color:#a9b0ac}
+.traffic-top .route{border:1px solid #8a918e;padding:7px 10px;font-weight:900;color:#eaece5}
+.traffic-top .status{display:flex;align-items:center;gap:10px}
+.traffic-top .status:before{content:'';width:8px;height:8px;background:#2bc82a;border-radius:50%;box-shadow:0 0 12px #2bc82a}
+.hero{position:relative;overflow:hidden;min-height:315px}
+.hero h1{position:relative;z-index:1;margin-top:17px}
+.hero p{position:relative;z-index:1}
+.road-graphic{position:absolute;right:1%;top:8px;width:190px;height:265px;opacity:.8;pointer-events:none}
+.road-graphic .pole{position:absolute;left:91px;top:80px;width:7px;height:185px;background:#707876}
+.road-graphic .light{position:absolute;left:61px;top:4px;width:67px;height:145px;border:2px solid #747b78;border-radius:16px;background:#242828;display:flex;flex-direction:column;justify-content:space-around;align-items:center;padding:12px}
+.road-graphic .light i{display:block;width:31px;height:31px;border-radius:50%;background:#3d3937}
+.road-graphic .light i:nth-child(1){background:#df3731;box-shadow:0 0 17px #b52b25}
+.road-graphic .light i:nth-child(2){background:#8b7525}
+.road-graphic .light i:nth-child(3){background:#225f2d}
+.road-graphic .street-label{position:absolute;right:0;bottom:19px;transform:rotate(-90deg);transform-origin:right bottom;color:#b6bcb6;font-size:9px;letter-spacing:.2em}
+.street-rule{height:17px;border-top:2px solid #5e6664;border-bottom:2px solid #5e6664;position:relative;margin:0 0 30px}
+.street-rule:after{content:'';position:absolute;top:6px;left:0;right:0;border-top:2px dashed #d3d3b9}
+.section-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px;font-size:11px;letter-spacing:.2em;font-weight:800}
+.section-bar span:last-child{color:#a6adaa;font-size:10px}
+.cover{background:#232729;border:1px solid #4c5352;padding:10px;position:relative}
+.cover:before{content:'';position:absolute;left:10px;top:10px;width:8px;height:8px;background:#2bc82a;z-index:2}
+.item:nth-child(2) .cover:before{background:#edc92a}
+.item:nth-child(3) .cover:before{background:#e33430}
+.item{border-top:3px solid #2bc82a;padding-top:12px}
+.item:nth-child(2){border-color:#edc92a}.item:nth-child(3){border-color:#e33430}
+.type{letter-spacing:.19em}.price{font-size:24px}
+.add{border:1px solid #f1eee7;letter-spacing:.04em}
+.add:hover{background:#dce2dc}
+.foot{position:relative;border-top:2px dashed #7d8580;letter-spacing:.13em}
+.route-pill{border:1px solid #8c9691;padding:7px 10px;color:#c4cac4;font-size:10px;letter-spacing:.16em}
+.panel .eyebrow{color:#d3d7ce}
+.panel h2:after{content:'  /  TKMK';font-size:11px;letter-spacing:.15em;color:#9ba59f;vertical-align:middle}
+@media(max-width:680px){.traffic-top{font-size:8px}.road-graphic{transform:scale(.58);transform-origin:top right;right:-7px;top:20px;opacity:.55}.hero{min-height:270px}.hero h1{font-size:clamp(44px,12vw,74px)}.hero p{max-width:85%}.section-bar{font-size:10px}.section-bar span:last-child{font-size:8px}.item{padding-top:8px}.cover{padding:5px}.cover:before{left:5px;top:5px;width:6px;height:6px}}
+
+/* Revision 01: slanted wordmark + exactly aligned signal bars */
+header > div:first-child{display:inline-flex;flex-direction:column;align-items:stretch;width:max-content}
+.logo{font-style:normal;transform:none;white-space:nowrap;padding-right:0}
+.stripes{display:flex;width:100%;gap:5px;margin-top:4px}
+.stripes i{flex:1 1 0;width:auto;min-width:0;height:6px}
+.brand-lockup{display:inline-flex;flex-direction:column;align-items:stretch;width:max-content}
+/* v5: traffic signal sequence: green -> amber -> red -> green */
+.road-graphic .light i{background:#343938;box-shadow:inset 0 0 0 2px #202526;transition:none}
+.road-graphic .light i:nth-child(3){animation:greenSignal 9s steps(1,end) infinite}
+.road-graphic .light i:nth-child(2){animation:amberSignal 9s steps(1,end) infinite}
+.road-graphic .light i:nth-child(1){animation:redSignal 9s steps(1,end) infinite}
+@keyframes greenSignal{0%,55.5%{background:#29d34a;box-shadow:0 0 18px #2dd64e,0 0 6px #29d34a}55.6%,100%{background:#343938;box-shadow:inset 0 0 0 2px #202526}}
+@keyframes amberSignal{0%,55.5%,66.7%,100%{background:#343938;box-shadow:inset 0 0 0 2px #202526}55.6%,66.6%{background:#ffd23c;box-shadow:0 0 18px #ffd23c,0 0 6px #ffd23c}}
+@keyframes redSignal{0%,66.6%,100%{background:#343938;box-shadow:inset 0 0 0 2px #202526}66.7%,100%{background:#f04438;box-shadow:0 0 18px #f04438,0 0 6px #f04438}}
+@media(prefers-reduced-motion:reduce){.road-graphic .light i{animation:none!important}.road-graphic .light i:nth-child(3){background:#29d34a!important;box-shadow:0 0 12px #29d34a!important}}
+@media(max-width:680px){.hero h1{font-size:clamp(38px,10.8vw,69px)}.hero .eyebrow{font-size:10px;letter-spacing:.11em}.road-graphic{opacity:.45}}
+
+/* v7 — free-standing enlarged signal head, no support pole */
+.road-graphic{width:205px;height:245px;right:0;top:0;opacity:1}
+.road-graphic .light{left:68px;top:8px;width:104px;height:222px;border-width:3px;border-radius:23px;padding:17px 12px}
+.road-graphic .light i{width:53px;height:53px;flex:none}
+@media(max-width:680px){.road-graphic{transform:scale(.7);right:-10px;top:10px;opacity:.8}}
+/* v8 — reduce vertical space between signal bottom and road divider */
+.hero{min-height:270px}
+.hero p{margin-bottom:16px}
+@media(max-width:680px){.hero{min-height:225px}.hero p{margin-bottom:12px}}
+.tally-wrap{background:#f7f7f7;border:1px solid #6c706e;min-height:540px;margin:22px 0}.tally-wrap iframe{width:100%;height:620px;border:0;display:block}.tally-wrap:focus-within{outline:2px solid #2bc82a;outline-offset:3px}@media(max-width:680px){.tally-wrap iframe{height:700px}}
+</style></head><body><header><div class="brand-lockup"><div class="logo">TKMK.</div><div class="stripes"><i></i><i></i><i></i></div></div><button class="bag" id="bag">BAG <span id="count">0</span> ↗</button></header><main class="wrap"><section class="view active" id="shop"><div class="traffic-top"><span class="route">ONLINE BOOKSTORE</span><span class="status">NOW ACCEPTING ORDERS</span></div><div class="hero"><div class="road-graphic" aria-hidden="true"><div class="light"><i></i><i></i><i></i></div></div><div class="eyebrow">Today Keeps Me Kind. / SINCE 2026</div><h1>WORDS<br>TO EVERYONE.</h1><p>好きな言葉を、好きなだけ。<br>ときめきに溢れる出会いを。</p></div><div class="street-rule" aria-hidden="true"></div><div class="section-bar"><span>03 TITLES / THE COLLECTION</span><span>SELECT YOUR DESTINATION ↘</span></div><div class="grid" id="products"></div></section><section class="view" id="cart"><div class="panel"><button class="secondary back" data-go="shop">← 商品一覧へ</button><div class="eyebrow">YOUR SELECTION</div><h2>YOUR BAG.</h2><div id="cartitems"></div><div class="total"><span>合計</span><strong id="total">¥0</strong></div><div class="actions"><button class="primary" id="checkoutBtn">注文手続きへ →</button><button class="secondary" data-go="shop">買い物を続ける</button></div></div></section><section class="view" id="checkout"><div class="panel"><button class="secondary back" data-go="cart">← カートへ</button><div class="eyebrow">ORDER DETAILS</div><h2>CHECKOUT.</h2><p class="notice">ご注文内容をご確認のうえ、以下のフォームから氏名と連絡先を送信してください。お支払いは後日です。</p><div class="orderbox" id="summary"></div><div class="tally-wrap"><iframe id="tallyFrame" title="TKMK ご注文フォーム" loading="lazy" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><p class="notice">※ 注文はTallyの送信ボタンを押して初めて受け付けられます。注文後の確認画面が表示されるまでお待ちください。</p></div></section></main><footer class="foot">TKMK.</footer><div class="toast" id="toast" role="status"></div><script>
+const products=[{id:'souseiki',category:'物語集',name:'創生記',price:500,img:'book1.jpg'},{id:'dohatsu',category:'随筆集',name:'怒髪商店は今日も満員怨霊',price:500,img:'book2.jpg'},{id:'jackalopes',category:'詩歌集',name:'Jackalopes',price:500,img:'book3.jpg'}];const cart={};const yen=n=>'¥'+n.toLocaleString('ja-JP');const el=id=>document.getElementById(id);const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));if(id==='cart')renderCart();if(id==='checkout'){renderSummary();loadTally();}window.scrollTo(0,0)}function toast(t){el('toast').textContent=t;el('toast').classList.add('show');setTimeout(()=>el('toast').classList.remove('show'),1700)}function add(id){cart[id]=(cart[id]||0)+1;updateCount();toast('カートに追加しました！')}function updateCount(){el('count').textContent=Object.values(cart).reduce((a,b)=>a+b,0)}function change(id,d){cart[id]=Math.max(0,(cart[id]||0)+d);updateCount();renderCart()}function selected(){return products.filter(p=>cart[p.id]>0)}function total(){return products.reduce((s,p)=>s+p.price*(cart[p.id]||0),0)}el('products').innerHTML=products.map(p=>`<article class="item"><div class="cover"><img src="${p.img}" alt="${esc(p.category+'『'+p.name+'』の表紙')}" loading="lazy"></div><div class="type">${p.category}</div><div class="name">『${esc(p.name)}』</div><div class="price">${yen(p.price)}</div><button class="add" data-add="${p.id}">＋ ADD TO BAG</button></article>`).join('');function renderCart(){el('cartitems').innerHTML=selected().length?selected().map(p=>`<div class="cartline"><img class="thumb" src="${p.img}" alt=""><div class="lineinfo"><strong>${esc(p.category)}『${esc(p.name)}』</strong><small>${yen(p.price)} / 冊</small></div><div class="qty"><button aria-label="${esc(p.name)}を減らす" data-change="${p.id}" data-d="-1">−</button><span>${cart[p.id]}</span><button aria-label="${esc(p.name)}を増やす" data-change="${p.id}" data-d="1">＋</button></div></div>`).join(''):'<p class="empty">カートはまだ空です。</p>';el('total').textContent=yen(total());el('checkoutBtn').disabled=selected().length===0}function renderSummary(){el('summary').innerHTML=selected().map(p=>`<p><span>${esc(p.name)} × ${cart[p.id]}冊</span><strong>${yen(cart[p.id]*p.price)}</strong></p>`).join('')+`<hr><p><strong>合計</strong><strong>${yen(total())}</strong></p>`}function loadTally(){const params=new URLSearchParams({alignLeft:'1',hideTitle:'1',transparentBackground:'1',dynamicHeight:'1',book1:String(cart.souseiki||0),book2:String(cart.dohatsu||0),book3:String(cart.jackalopes||0)});el('tallyFrame').src='https://tally.so/embed/PR9YO1?'+params.toString()}
+document.addEventListener('click',e=>{const a=e.target.closest('[data-add]');if(a)add(a.dataset.add);const c=e.target.closest('[data-change]');if(c)change(c.dataset.change,Number(c.dataset.d));const g=e.target.closest('[data-go]');if(g)show(g.dataset.go)});el('bag').onclick=()=>show('cart');el('checkoutBtn').onclick=()=>{if(selected().length)show('checkout')};updateCount();
+</script></body></html>
