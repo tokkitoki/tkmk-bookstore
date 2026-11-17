@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ご注文ありがとうございます | TKMK</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #151718;
+      color: #f5f5f5;
+      font-family: Arial, "Noto Sans JP", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header { width: 100%; padding: 28px 8%; }
+    .logo { display: inline-block; }
+    .logo strong {
+      display: block;
+      font-size: 32px;
+      letter-spacing: -2px;
+    }
+    .bars { display: flex; gap: 3px; }
+    .bars span { flex: 1; height: 5px; }
+    .bars span:nth-child(1) { background: #48cc85; }
+    .bars span:nth-child(2) { background: #efc94a; }
+    .bars span:nth-child(3) { background: #ed6863; }
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 650px;
+      padding: 70px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .check {
+      width: 76px;
+      height: 76px;
+      border: 2px solid #48cc85;
+      color: #48cc85;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 38px;
+      margin-bottom: 35px;
+    }
+    .eyebrow {
+      color: #48cc85;
+      font-size: 12px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: clamp(26px, 6vw, 42px);
+      margin: 18px 0 24px;
+    }
+    p {
+      color: #bfc3c3;
+      line-height: 2;
+      font-size: 15px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 38px;
+      padding: 16px 32px;
+      background: #48cc85;
+      color: #151718;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-radius: 4px;
+    }
+    footer {
+      padding: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <strong>TKMK.</strong>
+      <div class="bars">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="check">✓</div>
+    <div class="eyebrow">ORDER COMPLETE</div>
+    <h1>注文を承りました。</h1>
+    <p>
+      TKMKで本を選んでくれて、ありがとう。<br>
+      ご注文内容を確認のうえ、<br>
+      ご指定の連絡先にご案内いたします。
+    </p>
+    <a href="./">BACK TO STORE</a>
+  </main>
+
+  <footer>TKMK.</footer>
+</body>
+</html>
